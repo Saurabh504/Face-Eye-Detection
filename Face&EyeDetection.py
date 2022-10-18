@@ -10,7 +10,11 @@
 import cv2
 import numpy as np
 
+
 # creating a cascade
+# Program for Face and Eye Detection
+
+
 face_cascade = cv2.CascadeClassifier('E:\Projects\haarcascade_frontalface_default.xml')
 
 eye_cascade = cv2.CascadeClassifier('E:\Projects\haarcascade_eye.xml')
