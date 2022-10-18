@@ -1,7 +1,19 @@
+# There is a variety of computer applications that identify the eye in digital images, 
+# like- security systems, criminal identification, healthcare, and so on.
+# The eye-detection algorithms focus on the detection of the frontal human eye. 
+# The Python OpenCV library functions are mainly aimed at real-time computer vision. 
+# It is mainly used to do all the operations for image processing as well as detect objects.
+# OpenCV already contains many pre-trained classifiers for faces, eyes, smiles, etc.
+
+# Importing the required libraries
+
 import cv2
 import numpy as np
 
+
+# creating a cascade
 # Program for Face and Eye Detection
+
 
 face_cascade = cv2.CascadeClassifier('E:\Projects\haarcascade_frontalface_default.xml')
 
@@ -9,6 +21,7 @@ eye_cascade = cv2.CascadeClassifier('E:\Projects\haarcascade_eye.xml')
 
 cap = cv2.VideoCapture(0)
 
+# Simulating the process
 while True:
     ret, img = cap.read()
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
